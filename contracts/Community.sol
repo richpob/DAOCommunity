@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
- // Contrato de la Comunidad
+ // Contrato de la Comunidad DAO
 contract Community is Ownable(msg.sender) {
     string public communityName;
     string public communityAddress;
@@ -16,6 +16,7 @@ contract Community is Ownable(msg.sender) {
     mapping(address => uint256) public memberTokens;  // Tokens de votación asignados a cada miembro
     Proposal[] public proposals; // Lista de propuestas
     mapping(uint256 => mapping(address => bool)) public hasVoted; // Mapping to track if a member has voted on a proposal
+
 
     struct Proposal {
         string description;
