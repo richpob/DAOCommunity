@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -76,5 +76,3 @@ contract Community is Ownable(msg.sender) {
     }
 }
 
-//https://sepolia.etherscan.io/tx/0x2ac9813f5b340a9b892294f505dd1fe98b787d43c97d53e5742c04ed41dd7474
-//https://sepolia.etherscan.io/address/0x055e3df582b840a19b583d04c4e85225939fb303
