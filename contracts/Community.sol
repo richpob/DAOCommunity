@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
- // Contrato de la Comunidad DAO
+ // Contrato de la Comunidad DAO Version 1.0
 contract Community is Ownable(msg.sender) {
     string public communityName;
     string public communityAddress;
